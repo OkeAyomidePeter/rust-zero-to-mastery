@@ -69,3 +69,95 @@ This repository is for educational purposes only. It does not provide guarantees
 - Gain technical range from simple utilities to full applications
 
 Start at the first folder. Move forward only when the concepts are comfortable. Consistency beats speed.
+
+
+
+**Rust install steps for three platforms. Use rustup for toolchain and cargo.**
+
+````markdown
+# Rust Setup Guide
+
+This guide helps you install Rust on Windows, macOS, or Linux. It uses `rustup`, which manages Rust versions and includes `cargo`.
+
+## Windows
+
+1. Go to https://www.rust-lang.org/tools/install
+2. Download the Windows installer
+3. Run it and follow the prompts
+4. Restart your terminal
+
+## macOS
+
+Open Terminal and run:
+
+```bash
+curl https://sh.rustup.rs -sSf | sh
+````
+
+Follow the prompts. When finished:
+
+```bash
+source $HOME/.cargo/env
+```
+
+## Linux
+
+Open your shell and run:
+
+```bash
+curl https://sh.rustup.rs -sSf | sh
+```
+
+Follow the prompts. When finished:
+
+```bash
+source $HOME/.cargo/env
+```
+
+## Confirm the installation
+
+Run:
+
+```bash
+rustc --version
+cargo --version
+```
+
+You should see version numbers.
+
+## Using cargo
+
+`cargo` builds, runs, and manages Rust projects.
+
+To create a new project:
+
+```bash
+cargo new my_project
+```
+
+To run it:
+
+```bash
+cd my_project
+cargo run
+```
+
+## Local documentation
+
+Rust installs offline docs with examples.
+
+Open them with:
+
+```bash
+rustup doc
+```
+
+This launches your browser. The documentation contains many references and links.
+
+## The Book
+
+When this guide says **“The Book”**, it means the official Rust book included in the documentation you open through `rustup doc`. It explains ownership, borrowing, lifetimes, and more from beginner level.
+
+Read it often.
+
+
